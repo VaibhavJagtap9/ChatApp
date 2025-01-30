@@ -13,7 +13,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     // Connect to the Socket.IO server
-    const socketInstance = io("http://localhost:5002");  // Replace with your actual Socket.IO server URL
+    const socketInstance = io("https://chatapp-ojyk.onrender.com");  // Replace with your actual Socket.IO server URL
 
     socketInstance.on("connect", () => {
       console.log("Connected to socket server");
